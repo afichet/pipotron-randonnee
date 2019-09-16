@@ -7,7 +7,7 @@ class Rando:
         self.actions = ['tu longes', 'tu contournes', 'tu passes', 'tu descends', 'tu montes']
         self.directions = [('à côté', 0), ('derrière', 1), ('devant', 1), ('à droite', 0), ('à gauche', 0)]
         self.determinant = [('de la', 'du'), ('la', 'le')]
-        self.places = [('guet', 1), ('combe', 0), ('grotte', 0), ('col', 1), ('pré', 1)]
+        self.places = [('guet', 1), ('combe', 0), ('grotte', 0), ('col', 1), ('pré', 1), ('lac', 1)]
         self.noms = [
             'du pendu', 
             'de la glotte', 
@@ -20,15 +20,16 @@ class Rando:
             'du vieux coquin',
             'de la belette',
             'qui tue',
-            'de la goutière',
+            'de la gouttière',
             'Saint Georges',
             'des perrières',
             'du framboisier',
             'de la mouille',
             'aux fleurs',
-            'de la goute'
+            'de la goute',
+            'de la glaire'
         ]
-        self.liaisons = ['Bon, déjà,', 'Ensuite', 'Après', 'Puis', 'Enfin']
+        self.liaisons = ['Bon, déjà,', 'Ensuite', 'Après', 'Avant', 'Puis', 'Enfin']
 
     def get_str_adpn(self):
         a = random.randint(0, len(self.actions) - 1)
@@ -57,7 +58,7 @@ for i in range(len(rando.liaisons)):
     action, dir_place, nom = rando.get_str_adpn()
     bullshit += ' '.join([rando.liaisons[i], action, dir_place, nom]) + '. '
     
-    r = random.randint(0, 1)
+    r = random.randint(0, 2)
     if r > 0:
         action, dir_place, nom = rando.get_str_adpn()
         inst = ' '.join([dir_place.capitalize(), nom])
