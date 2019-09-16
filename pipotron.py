@@ -4,10 +4,40 @@ import random
 
 class Rando:
     def __init__(self):
-        self.actions = ['tu longes', 'tu contournes', 'tu passes', 'tu descends', 'tu montes']
-        self.directions = [('à côté', 0), ('derrière', 1), ('devant', 1), ('à droite', 0), ('à gauche', 0)]
+        self.actions = [
+            'tu longes', 
+            'tu contournes', 
+            'tu passes', 
+            'tu descends', 
+            'tu montes'
+        ]
+        
+        self.directions = [
+            ('à côté', 0), 
+            ('derrière', 1), 
+            ('devant', 1), 
+            ('à droite', 0), 
+            ('à gauche', 0),
+            ('au nord', 0), 
+            ('au sud', 0),
+            ('à l\'est', 0),
+            ('à l\'ouest', 0),
+            ('vers', 1)
+        ]
+        
         self.determinant = [('de la', 'du'), ('la', 'le')]
-        self.places = [('guet', 1), ('combe', 0), ('grotte', 0), ('col', 1), ('pré', 1), ('lac', 1), ('gorge', 0)]
+        
+        self.places = [
+            ('guet', 1), 
+            ('combe', 0), 
+            ('grotte', 0), 
+            ('col', 1), 
+            ('pré', 1), 
+            ('lac', 1), 
+            ('gorge', 0),
+            ('faille', 1)
+        ]
+        
         self.noms = [
             'du pendu', 
             'de la glotte', 
@@ -66,5 +96,5 @@ for i in range(len(rando.liaisons)):
                          
         action, dir_place, nom = rando.get_str_adpn()                         
         bullshit += inst + ', ' + ' '.join([action, dir_place, nom]) + '. '
-       
+        
 print(bullshit)
