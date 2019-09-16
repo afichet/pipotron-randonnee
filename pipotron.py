@@ -6,7 +6,7 @@ actions = ['tu longes', 'tu contournes', 'tu passes', 'tu descends', 'tu montes'
 directions = [('à côté', 0), ('derrière', 1), ('devant', 1), ('à droite', 0), ('à gauche', 0)]
 determinant = [('de la', 'du'), ('la', 'le')]
 places = [('guet', 1), ('combe', 0), ('grotte', 0), ('col', 1)]
-noms = ['du pendu', 'de la glotte', 'de la vulve Saint Pierre', 'du brossard', 'de la verge', 'Sainte Marie', 'de la grosse bosse']
+noms = ['du pendu', 'de la glotte', 'de la soupière', 'de la vulve Saint Pierre', 'du brossard', 'de la verge', 'Sainte Marie', 'de la grosse bosse']
 
 liaisons = ['Bon, déjà,', 'Ensuite', 'Après', 'Puis', 'Enfin']
 
