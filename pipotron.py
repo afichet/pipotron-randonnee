@@ -35,7 +35,10 @@ class Rando:
             ('pré', 1), 
             ('lac', 1), 
             ('gorge', 0),
-            ('faille', 1)
+            ('faille', 0),
+            ('cabane', 0),
+            ('refuge', 1),
+            ('clairière', 0),
         ]
         
         self.noms = [
